@@ -6,6 +6,12 @@
 	let gif = 'https://i.gifer.com/hdt.gif';
 
 	let string = `this string contains some <strong>HTML!!!</strong>`;
+
+	let count = 0;
+
+	function increment() {
+		count++;
+	}
 </script>
 
 <div>
@@ -18,9 +24,16 @@
 		<img {src} height="300" alt="kodok" />
 		<img src={gif} height="300" alt="kodok" />
 	</div>
-</div>
 
-{@html string}
+	{@html string}
+
+	<br />
+
+	<button on:click={increment}>
+		Count {count}
+		{count === 1 ? 'time' : 'times'}
+	</button>
+</div>
 
 <style>
 	.h1 {
@@ -36,5 +49,15 @@
 	.flex {
 		margin: 2rem 0;
 		text-align: center;
+	}
+
+	button {
+		margin: 1rem 0;
+		padding: 10px 22px;
+		border: 0;
+		background: darkorange;
+		border-radius: 10px;
+		cursor: pointer;
+		font-weight: 600;
 	}
 </style>
