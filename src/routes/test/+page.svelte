@@ -8,9 +8,11 @@
 	let string = `this string contains some <strong>HTML!!!</strong>`;
 
 	let count = 0;
+	$: doubled = count * 2
 
 	function increment() {
 		count++;
+		console.log(`DOM changes ${count}`);
 	}
 </script>
 
@@ -33,6 +35,8 @@
 		Count {count}
 		{count === 1 ? 'time' : 'times'}
 	</button>
+
+	<p>{count} doubled is {doubled}</p>
 </div>
 
 <style>
