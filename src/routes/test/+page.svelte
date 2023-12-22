@@ -13,6 +13,7 @@
 		accusantium vitae maiores.
 	</p>
 
+	<h2>Gif Meme hahahahahaha</h2>
 	<div class="flex">
 		<img {src} height="300" alt="kodok" />
 		<img src={gif} height="300" alt="kodok" />
@@ -22,6 +23,12 @@
 <style>
 	.h1 {
 		font-weight: 600;
+	}
+
+	h2 {
+		text-align: center;
+		font-weight: 700;
+		font-size: 2rem;
 	}
 
 	.flex {
