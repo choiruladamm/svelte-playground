@@ -4,6 +4,8 @@
 	let name = 'test page about';
 	let src = 'https://i.gifer.com/XcF7.gif';
 	let gif = 'https://i.gifer.com/hdt.gif';
+
+	let string = `this string contains some <strong>HTML!!!</strong>`;
 </script>
 
 <div>
@@ -18,6 +20,8 @@
 	</div>
 </div>
 
+{@html string}
+
 <style>
 	.h1 {
 		font-weight: 600;
@@ -30,6 +34,7 @@
 	}
 
 	.flex {
+		margin: 2rem 0;
 		text-align: center;
 	}
 </style>
