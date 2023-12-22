@@ -24,9 +24,17 @@
 		alert('count is dangerous hight!!!');
 		count = 0;
 	}
+
+	let numbers = [1, 2, 3, 4];
+
+	function addNumbers() {
+		numbers = [...numbers, numbers.length + 1];
+	}
+
+	$: sum = numbers.reduce((total, currentNumber) => total + currentNumber, 0);
 </script>
 
-<div>
+<main>
 	<h1 class="h1">{name.toUpperCase()}</h1>
 
 	<Paragraph />
@@ -49,7 +57,11 @@
 	<p>{count} doubled is {doubled}</p>
 	<!-- optional -->
 	<p>{count} doubled is {count * 2}</p>
-</div>
+
+	<p><strong> {numbers.join(' + ')} = {sum}</strong></p>
+
+	<button on:click={addNumbers}>Add a number</button>
+</main>
 
 <style>
 	.h1 {
