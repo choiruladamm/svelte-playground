@@ -8,11 +8,21 @@
 	let string = `this string contains some <strong>HTML!!!</strong>`;
 
 	let count = 0;
-	$: doubled = count * 2
+	$: doubled = count * 2;
 
 	function increment() {
 		count++;
 		console.log(`DOM changes ${count}`);
+	}
+
+	$: {
+		console.log(`the count is ${count}`);
+		console.log(`this will also be logged whenever count changes`);
+	}
+
+	$: if (count >= 10) {
+		alert('count is dangerous hight!!!');
+		count = 0;
 	}
 </script>
 
@@ -38,7 +48,7 @@
 
 	<p>{count} doubled is {doubled}</p>
 	<!-- optional -->
-	<p>{count} doubled is {count * 2}</p> 
+	<p>{count} doubled is {count * 2}</p>
 </div>
 
 <style>
