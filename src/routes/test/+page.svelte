@@ -37,6 +37,8 @@
 	</button>
 
 	<p>{count} doubled is {doubled}</p>
+	<!-- optional -->
+	<p>{count} doubled is {count * 2}</p> 
 </div>
 
 <style>
