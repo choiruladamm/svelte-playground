@@ -32,6 +32,8 @@
 	}
 
 	$: sum = numbers.reduce((total, currentNumber) => total + currentNumber, 0);
+
+	let data = 0;
 </script>
 
 <main>
@@ -61,6 +63,12 @@
 	<p><strong> {numbers.join(' + ')} = {sum}</strong></p>
 
 	<button on:click={addNumbers}>Add a number</button>
+
+	<p>{data}</p>
+	<div class="btn-group">
+		<button on:click={() => (data += 1)}>Increment</button>
+		<button on:click={() => (data -= 1)}>Decrement</button>
+	</div>
 </main>
 
 <style>
