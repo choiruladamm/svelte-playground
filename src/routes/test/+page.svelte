@@ -1,4 +1,5 @@
 <script>
+	import LIstButtonColor from './LIstButtonColor.svelte';
 	import Answer from './Answer.svelte';
 	import Haha from './Haha.svelte';
 	import PackageInfo from './PackageInfo.svelte';
@@ -100,6 +101,10 @@
 		<p style="font-weight: bolder;">{data} is between 5 and 10</p>
 	{/if}
 </main>
+
+<br />
+
+<LIstButtonColor />
 
 <style>
 	.h1 {
