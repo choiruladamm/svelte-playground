@@ -94,9 +94,10 @@
 
 	{#if data > 10}
 		<p style="font-weight: bolder;">{data} is greather than 10</p>
+	{:else if data < 5}
+		<p style="font-weight: bolder;">{data} is less than 5</p>
 	{:else}
-		<!-- else content here -->
-		<p style="font-weight: bolder;">{data} is between 0 and 10</p>
+		<p style="font-weight: bolder;">{data} is between 5 and 10</p>
 	{/if}
 </main>
 
