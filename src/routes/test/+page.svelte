@@ -1,6 +1,7 @@
 <script>
 	import Answer from './Answer.svelte';
-import Paragraph from './Paragraph.svelte';
+	import Haha from './Haha.svelte';
+	import Paragraph from './Paragraph.svelte';
 
 	let name = 'test page about';
 	let src = 'https://i.gifer.com/XcF7.gif';
@@ -74,6 +75,8 @@ import Paragraph from './Paragraph.svelte';
 	<p><strong>{numbers.join(' + ')} = {sum}</strong></p>
 
 	<Answer answer={3} />
+
+	<Haha />
 </main>
 
 <style>
