@@ -1,5 +1,6 @@
 <script>
-	import Paragraph from './Paragraph.svelte';
+	import Answer from './Answer.svelte';
+import Paragraph from './Paragraph.svelte';
 
 	let name = 'test page about';
 	let src = 'https://i.gifer.com/XcF7.gif';
@@ -69,6 +70,10 @@
 		<button on:click={() => (data += 1)}>Increment</button>
 		<button on:click={() => (data -= 1)}>Decrement</button>
 	</div>
+
+	<p><strong>{numbers.join(' + ')} = {sum}</strong></p>
+
+	<Answer answer={3} />
 </main>
 
 <style>
