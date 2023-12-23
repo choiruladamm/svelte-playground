@@ -87,6 +87,14 @@
 	<Haha />
 
 	<PackageInfo {...pkg} />
+
+	<button on:click={() => data++}>
+		simple counter is count {data}
+	</button>
+
+	{#if data > 10}
+		<p style="font-weight: bolder;">{data} is greather than 10</p>
+	{/if}
 </main>
 
 <style>
