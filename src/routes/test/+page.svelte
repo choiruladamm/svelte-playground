@@ -1,6 +1,7 @@
 <script>
 	import Answer from './Answer.svelte';
 	import Haha from './Haha.svelte';
+	import PackageInfo from './PackageInfo.svelte';
 	import Paragraph from './Paragraph.svelte';
 
 	let name = 'test page about';
@@ -36,6 +37,13 @@
 	$: sum = numbers.reduce((total, currentNumber) => total + currentNumber, 0);
 
 	let data = 0;
+
+	const pkg = {
+		name: 'svelte',
+		speed: 'blazing',
+		version: 4,
+		website: 'https://svelte.dev'
+	};
 </script>
 
 <main>
@@ -77,6 +85,8 @@
 	<Answer answer={3} />
 
 	<Haha />
+
+	<PackageInfo {...pkg} />
 </main>
 
 <style>
