@@ -4,6 +4,7 @@
 	import Haha from './Haha.svelte';
 	import PackageInfo from './PackageInfo.svelte';
 	import Paragraph from './Paragraph.svelte';
+	import CloneListButton from './CloneListButton.svelte';
 
 	let name = 'test page about';
 	let src = 'https://i.gifer.com/XcF7.gif';
@@ -105,6 +106,10 @@
 <br />
 
 <LIstButtonColor />
+
+<br> <br>
+
+<CloneListButton />
 
 <style>
 	.h1 {
