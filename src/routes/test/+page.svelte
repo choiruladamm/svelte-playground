@@ -5,6 +5,7 @@
 	import PackageInfo from './PackageInfo.svelte';
 	import Paragraph from './Paragraph.svelte';
 	import CloneListButton from './CloneListButton.svelte';
+	import ManipulateList from './ManipulateList.svelte';
 
 	let name = 'test page about';
 	let src = 'https://i.gifer.com/XcF7.gif';
@@ -17,13 +18,13 @@
 
 	function increment() {
 		count++;
-		console.log(`DOM changes ${count}`);
+		// console.log(`DOM changes ${count}`);
 	}
 
-	$: {
-		console.log(`the count is ${count}`);
-		console.log(`this will also be logged whenever count changes`);
-	}
+	// $: {
+	// 	console.log(`the count is ${count}`);
+	// 	console.log(`this will also be logged whenever count changes`);
+	// }
 
 	$: if (count >= 10) {
 		alert('count is dangerous hight!!!');
@@ -110,6 +111,10 @@
 <br> <br>
 
 <CloneListButton />
+
+<br> <br>
+
+<ManipulateList />
 
 <style>
 	.h1 {
