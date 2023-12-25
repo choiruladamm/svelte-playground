@@ -8,7 +8,7 @@
 	import KeyEachBlocks from './KeyEachBlocks.svelte';
 	import FetchApi from './FetchApi.svelte';
 	import ButtonColorList from './ButtonColorList.svelte';
-	import DomEvents from './events-section/DomEvents.svelte';
+	import { ArrowRight } from 'lucide-svelte';
 
 	let name = 'test page about';
 	let src = 'https://i.gifer.com/XcF7.gif';
@@ -60,7 +60,11 @@
 <main>
 	<h1 class="h1">{name.toUpperCase()}</h1>
 
-	<a style="font-weight: bolder;" href="/test/events-section">Go to events section</a>
+	<a style="font-weight: bolder;" href="/test/events-section"
+		><div style="display: flex; align-items: center;">
+			Go to events section <ArrowRight />
+		</div></a
+	>
 
 	<Paragraph />
 
