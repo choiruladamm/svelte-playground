@@ -49,6 +49,11 @@
 	};
 </script>
 
+<svelte:head>
+	<title>Test Explore Svelte</title>
+	<meta name="description" content="How to using svelte from basic" />
+</svelte:head>
+
 <main>
 	<h1 class="h1">{name.toUpperCase()}</h1>
 
@@ -108,11 +113,11 @@
 
 <LIstButtonColor />
 
-<br> <br>
+<br /> <br />
 
 <CloneListButton />
 
-<br> <br>
+<br /> <br />
 
 <ManipulateList />
 
