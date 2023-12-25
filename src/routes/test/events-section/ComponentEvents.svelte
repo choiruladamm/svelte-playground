@@ -8,6 +8,10 @@
   function handleMyNickName(event) {
     alert(event.detail.axel)
   }
+
+	function handleSayDosen(e) {
+		alert(e.detail.message)
+	}
 </script>
 
-<InnerDispatch on:adam={handleMyNickName}/>
+<InnerDispatch on:myDosenName={handleSayDosen}/>
