@@ -7,7 +7,7 @@
 	import ManipulateList from './ManipulateList.svelte';
 	import KeyEachBlocks from './KeyEachBlocks.svelte';
 	import FetchApi from './FetchApi.svelte';
-	import ListButtonColor from './ListButtonColor.svelte';
+	import ButtonColorList from './ButtonColorList.svelte';
 
 	let name = 'test page about';
 	let src = 'https://i.gifer.com/XcF7.gif';
@@ -109,8 +109,8 @@
 	{/if}
 
 	<div style="display: flex; flex-direction: column; gap: 15px;">
-		<ListButtonColor />
 		<CloneListButton />
+		<ButtonColorList />
 		<ManipulateList />
 		<KeyEachBlocks />
 		<FetchApi />
