@@ -7,6 +7,7 @@
 	import CloneListButton from './CloneListButton.svelte';
 	import ManipulateList from './ManipulateList.svelte';
 	import KeyEachBlocks from './KeyEachBlocks.svelte';
+	import FetchApi from './FetchApi.svelte';
 
 	let name = 'test page about';
 	let src = 'https://i.gifer.com/XcF7.gif';
@@ -124,6 +125,10 @@
 	<br /> <br />
 	
 	<KeyEachBlocks />
+
+	<br /> <br />
+
+	<FetchApi />
 </main>
 
 <style>
