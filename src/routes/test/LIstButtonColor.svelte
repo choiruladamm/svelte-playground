@@ -6,32 +6,13 @@
 <h1 style="color: {selected};">Pick a color</h1>
 
 <div>
-	<!-- <button
-		aria-current={selected === 'red'}
-		aria-label="red"
-		style="background: red;"
-		on:click={() => (selected = 'red')}
-	></button>
-	<button
-		aria-current={selected === 'orange'}
-		aria-label="orange"
-		style="background: orange;"
-		on:click={() => (selected = 'orange')}
-	></button>
-	<button
-		aria-current={selected === 'yellow'}
-		aria-label="yellow"
-		style="background: yellow;"
-		on:click={() => (selected = 'yellow')}
-	></button> -->
-
 	{#each colors as color, i}
 		<button
 			aria-current={selected === color}
 			aria-label={color}
 			style="background: {color}"
-			on:click={() => (selected = color)}
-		>{i + 1}</button>
+			on:click={() => (selected = color)}>{i + 1}</button
+		>
 	{/each}
 </div>
 
