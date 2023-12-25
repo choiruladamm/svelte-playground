@@ -1,4 +1,5 @@
 <script>
+	import ComponentEvents from './ComponentEvents.svelte';
 	import DomEvents from './DomEvents.svelte';
 	import EventModifier from './EventModifier.svelte';
 </script>
@@ -10,8 +11,9 @@
 
 <main class="flex">
 	<h1>DOM Events - Test Explore Svelte</h1>
-	
+
 	<EventModifier />
+	<ComponentEvents />
 	<!-- <DomEvents /> -->
 </main>
 
