@@ -9,19 +9,16 @@
 		{ id: 5, name: 'egg' }
 	];
 
-  function handleDeleteClick() {
-    things = things.slice(1)
-  }
+	function handleDeleteClick() {
+		things = things.slice(1);
+	}
 </script>
 
 <div>
-  <button on:click={handleDeleteClick}>Remove first thing</button>
-
-	{#each things as thing (thing.id)}
-		<Emoji name={thing.name} />
-	{/each}
+	<button on:click={handleDeleteClick}>Remove first thing</button>
+	<ul>
+		{#each things as thing (thing.id)}
+			<Emoji name={thing.name} />
+		{/each}
+	</ul>
 </div>
-
-<style>
-	/* your styles go here */
-</style>

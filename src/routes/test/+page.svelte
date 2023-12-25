@@ -1,5 +1,4 @@
 <script>
-	import LIstButtonColor from './LIstButtonColor.svelte';
 	import Answer from './Answer.svelte';
 	import Haha from './Haha.svelte';
 	import PackageInfo from './PackageInfo.svelte';
@@ -8,6 +7,7 @@
 	import ManipulateList from './ManipulateList.svelte';
 	import KeyEachBlocks from './KeyEachBlocks.svelte';
 	import FetchApi from './FetchApi.svelte';
+	import ListButtonColor from './ListButtonColor.svelte';
 
 	let name = 'test page about';
 	let src = 'https://i.gifer.com/XcF7.gif';
@@ -69,8 +69,6 @@
 
 	{@html string}
 
-	<br />
-
 	<button on:click={increment}>
 		Count {count}
 		{count === 1 ? 'time' : 'times'}
@@ -109,26 +107,14 @@
 	{:else}
 		<p style="font-weight: bolder;">{data} is between 5 and 10</p>
 	{/if}
-	
-	<br />
-	
-	<LIstButtonColor />
-	
-	<br /> <br />
-	
-	<CloneListButton />
-	
-	<br /> <br />
-	
-	<ManipulateList />
-	
-	<br /> <br />
-	
-	<KeyEachBlocks />
 
-	<br /> <br />
-
-	<FetchApi />
+	<div style="display: flex; flex-direction: column; gap: 15px;">
+		<ListButtonColor />
+		<CloneListButton />
+		<ManipulateList />
+		<KeyEachBlocks />
+		<FetchApi />
+	</div>
 </main>
 
 <style>
