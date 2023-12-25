@@ -1,5 +1,6 @@
 <script>
 	import DomEvents from './DomEvents.svelte';
+	import EventModifier from './EventModifier.svelte';
 </script>
 
 <svelte:head>
@@ -10,7 +11,8 @@
 <main class="flex">
 	<h1>DOM Events - Test Explore Svelte</h1>
 	
-	<DomEvents />
+	<EventModifier />
+	<!-- <DomEvents /> -->
 </main>
 
 <style>
