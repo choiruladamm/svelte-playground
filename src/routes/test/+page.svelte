@@ -6,6 +6,7 @@
 	import Paragraph from './Paragraph.svelte';
 	import CloneListButton from './CloneListButton.svelte';
 	import ManipulateList from './ManipulateList.svelte';
+	import KeyEachBlocks from './KeyEachBlocks.svelte';
 
 	let name = 'test page about';
 	let src = 'https://i.gifer.com/XcF7.gif';
@@ -107,19 +108,23 @@
 	{:else}
 		<p style="font-weight: bolder;">{data} is between 5 and 10</p>
 	{/if}
+	
+	<br />
+	
+	<LIstButtonColor />
+	
+	<br /> <br />
+	
+	<CloneListButton />
+	
+	<br /> <br />
+	
+	<ManipulateList />
+	
+	<br /> <br />
+	
+	<KeyEachBlocks />
 </main>
-
-<br />
-
-<LIstButtonColor />
-
-<br /> <br />
-
-<CloneListButton />
-
-<br /> <br />
-
-<ManipulateList />
 
 <style>
 	.h1 {
